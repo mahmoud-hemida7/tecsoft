@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="css/style-rtl.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>tec & soft</title>
+</head>
+
+<body class="stretched" id="body">
+	<div id="wrapper" class="clearfix">
+		<!-- Content
+		============================================= -->
+		<section id="content" class="login-content">
+			<div class="modal fade" id="forget_model" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div  id="popup-forget-pass" class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div id="forget-card" class="card forget-card">
+								<div id="card-body0" class="card-body">
+									<h4 class="card-title mb-1">Forgot Password?</h4>
+									<p class="card-text">Don't worry! it happens. Please enter phone number associated with your account.</p>
+									<div>
+										<form id="login-form" name="login-form" class="mb-0" action="#" method="post">
+											<div class="col-12 form-group px-0 py-4 m-0">
+												<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control  w-100" placeholder="Phone number" />
+											</div>
+										</form>
+										<button   class="btn  w-100 forget-btn mt-4 text-white" data-toggle="modal" data-target="#verification_code"> 
+											Continue
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="verification_code" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div  id="popup-forget-pass" class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div id="verfied-code" class="card verfied-card">
+								<div id="card-body0" class="card-body">
+									<h4 class="card-title mb-1">Enter Verification Code</h4>
+									<p class="card-text m-0">We sent it to the number</p>
+									<p class="card-text">+2001001234567</p>
+									<div>
+										<form id="verified-form" name="verifcation-form" class="mb-0" action="#" method="post">
+											<div class="col-12 form-group px-0 py-4 m-0 d-flex justify-content-between">
+												<input type="text" value="6"  id="verifcation-form" name="verifcation-form" class="form-control text-center active" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+												<input type="text" id="verifcation-form" name="verifcation-form" class="form-control text-center" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+												<input type="text" id="verifcation-form" name="verifcation-form" class="form-control text-center" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+												<input type="text" id="verifcation-form" name="verifcation-form" class="form-control text-center" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+											</div>
+										</form>
+										<button class="btn  w-100 forget-btn mt-4 text-white" data-toggle="modal" data-target="#create_new_pass"> 
+											Verify
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="create_new_pass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div  id="popup-forget-pass" class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<div id="change-code" class="card change-card">
+								<div id="card-body0" class="card-body">
+									<h4 class="card-title mb-1">Create new password</h4>
+									<p class="card-text ">Your new password must be different from your previous password</p>
+									<div>
+										<form id="change-password-form" name="change-password-form" class="mb-0" action="#" method="post">
+											<label for="password-field-change">Password</label>
+											<div id="password-field-change" class="col-12 form-group  px-0 py-3 m-0">
+												<input type="password" id="password_enter" name="login-form-password" value="" class="form-control" placeholder="New Password"/>
+												<i id="toggel_eye1" class="icon-eye-slash" onclick="hideShow('password_enter','toggel_eye1')"></i>
+											</div>
+											<div id="password-field-rechange" class="col-12 form-group  px-0 m-0">
+												<input type="password" id="password_reenter" name="login-form-password" value="" class="form-control" placeholder="Re-enter Password"/>
+												<i id="toggel_eye2" class="icon-eye-slash" onclick="hideShow('password_reenter','toggel_eye2')"></i>
+											</div>
+										</form>
+										<button class="btn  w-100 forget-btn mt-4 text-white" data-toggle="modal" data-target="#exampleModal-2"> 
+											Reset Password
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-wrap py-5 ">
+				<div class="container pb-5">
+					<div id="logo" class="col-lg-2 col-md-3 col-10" style="height: 30px; margin-left: 0;">
+						<img src="images/assets/logo.png" alt="lodo" srcset=""  />
+					</div>
+					<div class="section bg-transparent min-vh-100 p-0 m-0 d-flex">
+						<div class="vertical-middle">
+							<div class="container py-5">
+								<div class="card mx-auto rounded-0 border-0" style="max-width: 400px;">
+									<div class="card-body" style="padding: 32px;">
+										<form id="login-form" name="login-form" class="form-group mb-0 " action="#" method="post">
+											<h3 class="m-0">Login</h3>
+											<p class="m-0">Login to continue</p>
+											<div class="row pt-4">
+												<div class="col-12 form-group">
+													<input type="email" id="login-form-username" name="login-form-username" value=""  aria-describedby="emailHelp" class="form-control not-dark" placeholder="Email or phone number" />
+												</div>
+	
+												<div id="password-field" class="col-12 form-group">
+													<input type="password" id="myPassword" name="password" value="" class="form-control not-dark" placeholder="Password" />
+													<i id="toggel_eye" class="icon-eye-slash" onclick="hideShow('myPassword','toggel_eye')"></i>
+												</div>
+												<div class="col-12 form-group mb-0">
+													<button  type="submit" class="button button-3d button-green m-0 " id="login-form-submit" name="login-form-submit" value="login">Login</button>
+												</div>
+												<div class="forget-password py-4">
+													<a href="#" class="forget-pass"  type="button" class="btn btn-forget" data-toggle="modal" data-target="#forget_model">Forgot password</a>
+												</div>
+															<!-- Button trigger modal -->
+												<div class="connect-with text-center w-100 ">
+													<p class="mb-3 ">Or connect using a social account</p>
+												</div>
+											</div>
+										</form>
+										<div class="center login-ways">
+											<a href="#" class="button button-rounded  si-google  si-colored"> <img src="images/assets/ic_google.png" alt=""> Google</a>
+											<a href="#" class="button button-rounded si-facebook si-colored"> <i class="icon-facebook"></i> Facebook</a>
+										</div>
+										<div class="goto-signup text-center w-100 pt-4">
+											<p>Don't have an account? <span><a href="signup.html"> Sign up</a></span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Footer Scripts
+	============================================= -->
+
+	<script src="js/functions.js"></script>
+</body>
+
+</html>
